@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor Landing Page</title>
+    <title>Dr. Gangesh Gunjan</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,22 +14,32 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "--0oZCKHxLh1dlFX9",
+      });
+   })();
+</script>
 </head>
 <body>
     
     <header class="header">
 
-        <a href="#" class="logo"> <i class="fas fa-tooth"></i> neurology </a>
+        <a href="#" class="logo">  Neuro Center </a>
         <nav class="navbar">
             <a href="#home">home</a>
             <a href="#about">about</a>
             <a href="#services">services</a>
             <a href="#team">team</a>
-            <a href="#pricing">pricing</a>
+            <!-- <a href="#pricing">pricing</a> -->
             <a href="#blog">blog</a>
         </nav>
 
-        <a href="#" class="btn"> make appointment </a>
+        <!-- <a href="#" class="btn"> make appointment </a> -->
         <div id="menu-btn" class="fas fa-bars"></div>
 
     </header>
@@ -41,9 +51,9 @@
     <section class="home" id="home">
 
         <div class="content">
-            <h3>Neurologist</h3>
+            <h3>Dr. Gangesh Gunjan</h3>
             <p>One of the best neurologists in delhi. Providing healthcare services sinces 2010.</p>
-            <a href="#" class="btn">make appointment</a>
+            <a href="#about" class="btn">Know More</a>
         </div>
 
 
@@ -64,10 +74,12 @@
             </div>
 
             <div class="content">
-                <h3>our clinic is made for you to be smiling all the time</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate inventore explicabo recusandae cumque dolor voluptas nihil.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate inventore explicabo recusandae cumque dolor voluptas nihil.</p>
-                <a href="#" class="btn">read more</a>
+                <div class="content">
+                    <h3>our clinic is made for you to be smiling all the time</h3>
+                    <p>Welcome to Neuro Center, where we prioritize your neurological health and well-being. Our clinic, led by Dr. Gangesh Gunjan, has been providing exceptional healthcare services in Delhi since 2010. We specialize in treating a wide range of neurological conditions, ensuring that our patients receive the highest quality of care.</p>
+                    <p>At Neuro Center, our mission is to offer comprehensive neurological care with a personal touch. Our experienced team of professionals is dedicated to diagnosing and treating neurological disorders with precision and compassion. Whether it's brain, spine, or pain management, we are here to help you lead a healthier life.</p>
+                    <a href="index.html#services" class="btn">our services</a>
+                </div>
             </div>
 
         </div>
@@ -87,21 +99,21 @@
         <div class="box-container">
 
             <div class="box">
-                <img src="images/services-1.webp" alt="">
-                <h3>online schedule</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis in excepturi.</p>
+                <img src="images/brain.png" alt="">
+                <h3>Brain</h3>
+                <p>We treat conditions like brain tumors, aneurysms, and traumatic brain injuries.</p>
             </div>
 
             <div class="box">
-                <img src="images/services-2.webp" alt="">
-                <h3>neurological recreation </h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis in excepturi.</p>
+                <img src="images/spine.png" alt="">
+                <h3>Spine </h3>
+                <p>Neurosurgical interventions address issues like spinal cord injuries, herniated discs, and spinal stenosis.</p>
             </div>
 
             <div class="box">
-                <img src="images/services-3.webp" alt="">
-                <h3>oral hygiene experts</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis in excepturi.</p>
+                <img src="images/pain.png" alt="">
+                <h3>Pain Management</h3>
+                <p>Effective pain control enhances patient recovery and quality of life post-surgery.</p>
             </div>
 
         </div>
@@ -194,7 +206,7 @@
 
     <!-- pricing plan  -->
 
-    <section class="pricing" id="pricing">
+    <!-- <section class="pricing" id="pricing">
 
         <h1 class="heading">pricing plan</h1>
 
@@ -250,7 +262,7 @@
 
         </div>
 
-    </section>
+    </section> -->
 
     <!-- pricing plan ends -->
 
@@ -322,24 +334,24 @@
 
         <h1 class="heading">make appointment</h1>
 
-        <form action="">
+        <form id="appointment-form" action="">
 
             <span>your name :</span>
             <div class="inputBox">
-                <input type="text" placeholder="first name">
-                <input type="text" placeholder="last name">
+                <input type="text" id="first-name"  placeholder="first name">
+                <input type="text" id="last-name" placeholder="last name">
             </div>
 
             <span>your email :</span>
-            <input type="email" placeholder="enter your email" class="box">
+            <input type="email"  id="email" placeholder="enter your email" class="box">
 
             <span>your number :</span>
-            <input type="number" placeholder="enter your number" class="box">
+            <input type="number"  id="number" placeholder="enter your number" class="box">
 
             <span>appointment date :</span>
-            <input type="datetime-local" class="box">
+            <input type="datetime-local" id="appointment-date" class="box">
 
-            <input type="submit" value="order now" class="btn">
+            <input type="submit" value="Get Appointment" class="btn">
 
         </form>
 
