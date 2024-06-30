@@ -1,9 +1,9 @@
 let menu = document.querySelector("#menu-btn");
 let navbar = document.querySelector(".header .navbar");
 
-// Initialize EmailJS with the public key (User ID)
+
 (function(){
-    emailjs.init("--0oZCKHxLh1dlFX9"); // Replace 'YOUR_PUBLIC_KEY' with your actual public key from EmailJS
+    emailjs.init("--0oZCKHxLh1dlFX9");
 })();
 
 menu.onclick = () => {
@@ -59,3 +59,5 @@ document.getElementById('appointment-form').addEventListener('submit', function(
             alert('Failed to send appointment request.');
         });
 });
+
+
