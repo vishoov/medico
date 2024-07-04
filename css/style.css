@@ -18,7 +18,7 @@
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: .2s linear;
 }
 
@@ -123,37 +123,46 @@ section{
 
 /* header end */
 
-/* home */
+/* Home */
 
-.home{
+.text-box{
+    padding: 10%;
+   
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,.1);
+
+}
+
+.Home{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(../images/home.jpg) no-repeat;
+    background: url(../images/Home.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.home .content{
+.Home .content{
     max-width: 60rem;
     padding-left: 6rem;
     padding-top: 10rem;
 }
 
-.home .content h3{
+.Home .content h3{
     font-size: 5rem;
     color: var(--black);
     line-height: 1.2;
 }
 
-.home .content p{
+.Home .content p{
     line-height: 2;
     font-size: 1.5rem;
     color: var(--light-color);
     padding: 1rem 0;
 }
 
-/* home end */
+/* Home end */
 
 /* about us */
 
@@ -619,16 +628,16 @@ section{
         font-size: 2rem;
     }
 
-    .home{
+    .Home{
         background-position: left;
     }
 
-    .home .content{
+    .Home .content{
         max-width: 50rem;
         padding-left: 3rem;
     }
 
-    .home .content h3{
+    .Home .content h3{
         font-size: 4rem;
     }
 
@@ -640,7 +649,7 @@ section{
         font-size: 50%;
     }
 
-    .home .content h3{
+    .Home .content h3{
         font-size: 3rem;
     }
 
