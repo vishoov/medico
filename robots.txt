@@ -1,0 +1,12 @@
+# robots.txt for drgangeshgunjanneuro.com
+
+User-agent: *
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /test/
+
+# Allow crawling of all other content
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.drgangeshgunjanneuro.com/sitemap.xml
